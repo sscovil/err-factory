@@ -1,0 +1,30 @@
+{
+  "name": "simple-error-factory",
+  "version": "1.0.0",
+  "description": "A super simple ES6 class factory for extending Error",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sscovil/simple-error-factory.git"
+  },
+  "keywords": [
+    "error",
+    "class",
+    "factory",
+    "es6",
+    "stacktrace"
+  ],
+  "author": "Shaun Scovil <sscovil@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sscovil/simple-error-factory/issues"
+  },
+  "homepage": "https://github.com/sscovil/simple-error-factory#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4"
+  }
+}
