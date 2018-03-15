@@ -4,7 +4,7 @@ A super simple ES6 class factory for extending Error.
 ## Install
 
 ```bash
-$ npm install --save simple-error-factory
+$ npm install --save err-factory
 ```
 
 ## Usage:
