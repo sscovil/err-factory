@@ -1,6 +1,6 @@
 {
   "name": "err-factory",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A super simple ES6 class factory for extending Error",
   "main": "index.js",
   "engines" : {
