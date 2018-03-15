@@ -1,13 +1,13 @@
 'use strict';
 
-const errorFactory = require('../index');
+const errFactory = require('../index');
 const { expect } = require('chai');
 
 it('returns an error class with the name passed in as the first argument', function() {
   let err;
   let message;
 
-  const MyError = errorFactory('MyError');
+  const MyError = errFactory('MyError');
   message = 'This is a customer error!';
   err = new MyError(message);
 
@@ -16,7 +16,7 @@ it('returns an error class with the name passed in as the first argument', funct
   expect(err.constructor.name).to.equal('MyError');
   expect(err.message).to.equal(message);
 
-  const MyOtherError = errorFactory('MyOtherError');
+  const MyOtherError = errFactory('MyOtherError');
   message = 'This is another customer error!';
   err = new MyOtherError(message);
 
@@ -30,7 +30,7 @@ it('throws a TypeError if the first argument is not a string', function() {
   const args = [undefined, null, 123, true, [1,2,3], {}, NaN, () => {}];
 
   args.forEach((arg) => {
-    expect(() => errorFactory(arg)).to.throw(TypeError);
+    expect(() => errFactory(arg)).to.throw(TypeError);
   });
 });
 
@@ -38,7 +38,7 @@ it('shows the correct error name in the stacktrace', function() {
   let err;
   let message;
 
-  const MyError = errorFactory('MyError');
+  const MyError = errFactory('MyError');
   message = 'This is a customer error!';
   err = new MyError(message);
 

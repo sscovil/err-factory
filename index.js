@@ -6,7 +6,7 @@
  * @param {string} name - Name of the ErrorClass to create.
  * @returns {{new(*=): ErrorClass, new(*=): ErrorClass, name: string, message: string, stack?: string}}
  */
-module.exports = function errorFactory(name) {
+module.exports = function errFactory(name) {
   if (typeof name !== 'string') {
     throw new TypeError('First argument must be a string.')
   }

@@ -1,4 +1,4 @@
-# Node.js Simple Error Factory
+# Node.js Error Factory
 A super simple ES6 class factory for extending Error.
 
 ## Install
@@ -10,9 +10,9 @@ $ npm install --save simple-error-factory
 ## Usage:
 
 ```js
-const errorFactory = require('simple-error-factory');
+const errFactory = require('err-factory');
 
-const MyCustomError = errorFactory('MyCustomError');
+const MyCustomError = errFactory('MyCustomError');
 const err = new MyCustomError('This is a custom error!');
 
 console.log(err instanceof MyCustomError); // true
