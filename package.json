@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A super simple ES6 class factory for extending Error",
   "main": "index.js",
+  "engines" : {
+    "node" : ">=6.4.0"
+  },
   "scripts": {
     "test": "mocha --recursive --exit"
   },
