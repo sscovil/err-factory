@@ -1,5 +1,5 @@
 # Node.js Error Factory
-A super simple ES6 class factory for extending Error.
+A super simple ES6 class factory for extending Error. No configuration, no dependencies.
 
 ## Install
 
